@@ -30,13 +30,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Name:</strong>
-                    <input type="text" name="name" value="{{ $pegawai->nama }}" class="form-control" placeholder="Name">
+                    <input type="text" name="nama" value="{{ $pegawai->nama }}" class="form-control" placeholder="Name">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Jabatan:</strong>
-                    <input type="text" name="name" value="{{ $pegawai->jabatan }}" class="form-control" placeholder="Jabatan">
+                    <input type="text" name="jabatan" value="{{ $pegawai->jabatan }}" class="form-control" placeholder="Jabatan">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
@@ -48,7 +48,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Alamat:</strong>
-                    <textarea class="form-control" style="height:150px" name="detail" placeholder="Alamat">{{ $pegawai->alamat}}</textarea>
+                    <textarea class="form-control" style="height:150px" name="alamat" placeholder="Alamat">{{ $pegawai->alamat}}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
