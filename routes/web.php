@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PegawaiController;
-
+use Illuminate\Support\Facades\Auth;
 Route::get('/', function () {
     return view('welcome');
 });
