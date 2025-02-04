@@ -1,44 +1,41 @@
-@extends('home')
+@extends('dashboard')
 @section('Judul Halaman', 'Show')
   
 
-@section('content')
+@section('dashboard')
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('pegawais.index') }}"> Back</a>
             </div>
+            <br>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Nama:</strong>
-                {{ $pegawai->nama }}
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Jabatan:</strong>
-                {{ $pegawai->jabatan }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>No Telp:</strong>
-                {{ $pegawai->no_telp }}
-            </div>
-        </div>
-      
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Alamat:</strong>
-                {{ $pegawai->alamat }}
-            </div>
-        </div>
-    </div>
+    <div  class="table-responsive" >
+<div>
+    <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Nama</th>
+      <th scope="col">Jabatan</th>
+      <th scope="col">No Telp</th>
+      <th scope="col">Alamat</th>
+    </tr>
+  </thead>
+@php
+    $i = 0;
+@endphp
+  <tbody>
+    <tr>
+      <td>{{ $pegawai->nama }}</td>
+      <td>{{ $pegawai->jabatan }}</td>
+      <td>{{ $pegawai->no_telp }}</td>
+      <td>{{ $pegawai->alamat }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
 
 @endsection
